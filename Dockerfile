@@ -4,7 +4,6 @@ WORKDIR /src
 COPY . ./
 
 RUN corepack enable
-RUN yarn install --no-immutable
 
 RUN yarn run web:build:prod
 
